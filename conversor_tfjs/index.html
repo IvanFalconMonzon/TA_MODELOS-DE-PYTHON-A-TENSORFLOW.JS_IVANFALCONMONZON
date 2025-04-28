@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversión Fahrenheit a Celsius</title>
+  
+  <!-- Importa la librería de TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0"></script>
+  
+  <!-- Enlace a archivo CSS externo -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Conversión de Temperatura - Fahrenheit a Celsius</h1>
+  
+  <!-- Campo de entrada para el valor en Fahrenheit -->
+  <input type="number" id="fahrenheitInput" placeholder="Fahrenheit °F">
+  
+  <!-- Botón que ejecuta la conversión al hacer clic -->
+  <button onclick="predecir()">Convertir</button>
+  
+  <!-- Elemento donde se mostrará el resultado -->
+  <p id="resultado"></p>
+
+  <!-- Enlace al archivo JavaScript externo que contiene la lógica de conversión -->
+  <script src="conversion.js"></script>
+</body>
+</html>
