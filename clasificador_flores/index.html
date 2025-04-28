@@ -1,0 +1,41 @@
+<!-- ------------------- Sección 1: Definición de la estructura básica del documento ------------------- -->
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- ------------------- Sección 2: Encabezado de la página ------------------- -->
+<head>
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite una correcta visualización en móviles -->
+  <title>Clasificación de Flores</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+
+  <!-- Importar TensorFlow.js desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0"></script>
+
+  <!-- Vincular hoja de estilos externa -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<!-- ------------------- Sección 3: Cuerpo de la página ------------------- -->
+<body>
+  <div class="container"> <!-- Contenedor principal -->
+
+    <h1>Clasificación de Flores</h1> <!-- Título principal en la página -->
+
+    <!-- Entrada de archivo para que el usuario suba una imagen -->
+    <input type="file" id="imagenInput" accept="image/*">
+
+    <!-- Botón que activará la predicción -->
+    <button id="predecirBtn">Predecir Flor</button>
+
+    <!-- Párrafo donde se mostrará el resultado de la predicción -->
+    <p id="resultado"></p>
+
+    <!-- Imagen seleccionada por el usuario que será mostrada -->
+    <img id="imagenSeleccionada" src="" alt="Imagen de la flor seleccionada" class="imagen-flor">
+
+  </div>
+
+  <!-- Importar archivo JavaScript que contiene la lógica del clasificador -->
+  <script src="clasificador.js"></script>
+</body>
+</html>

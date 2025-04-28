@@ -1,0 +1,88 @@
+/* ------------------- Sección 1: Estilos generales del cuerpo ------------------- */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0fff0; /* Fondo verde muy claro (Honeydew) */
+  color: #2e8b57; /* Texto verde (SeaGreen) */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------- Sección 2: Contenedor principal ------------------- */
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #e6ffe6; /* Verde pastel */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------- Sección 3: Títulos ------------------- */
+
+h1 {
+  color: #228b22; /* Verde Bosque */
+  animation: fadeIn 2s ease-in;
+}
+
+/* ------------------- Sección 4: Botones ------------------- */
+
+button {
+  background-color: #9acd32; /* Amarillo verdoso (YellowGreen) */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6b8e23; /* OliveDrab (verde más oscuro) */
+}
+
+/* ------------------- Sección 5: Input de archivos ------------------- */
+
+input[type="file"] {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #228b22; /* Mismo verde bosque que el título */
+}
+
+/* ------------------- Sección 6: Imagen de la flor ------------------- */
+
+.imagen-flor {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  border-radius: 8px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* ------------------- Sección 7: Resultado de la predicción ------------------- */
+
+#resultado {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #556b2f; /* DarkOliveGreen para resaltar */
+  animation: slideIn 1s ease-in;
+}
+
+/* ------------------- Sección 8: Animaciones ------------------- */
+
+/* Animación de aparición suave */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Animación de entrada desde abajo */
+@keyframes slideIn {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
